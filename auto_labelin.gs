@@ -1,10 +1,10 @@
 function onOpen(e) {
   DocumentApp.getUi().createMenu("図表番号")
-    .addItem("自動採番", "autoLabeling")
+    .addItem("自動採番", "autoNumbering")
     .addToUi()
 }
 
-function autoLabeling() {
+function autoNumbering() {
   const body = DocumentApp.getActiveDocument().getBody()
     console.log(body)
 
